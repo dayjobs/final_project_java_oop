@@ -1,17 +1,17 @@
-import java.awt.Color;
+package Fishes;
 import java.awt.Graphics;
 
 public abstract class Fish{
     protected String name;
     protected String type;
-    protected int movX, movY;
+    protected int x,y;
     
 
-    public Fish(string name, String type, int x, int y){
+    public Fish(String name, String type, int x, int y){
         this.name = name;
         this.type = type;
-        this.x = movX;
-        this.y = movY;
+        this.x = x;
+        this.y = y;
     }
 
     public abstract void draw(Graphics g);

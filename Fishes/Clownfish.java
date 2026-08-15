@@ -1,14 +1,17 @@
 package Fishes;
-public class ClownFish extends Fish{
-    private static int numClownFish = 0;
+import java.awt.Color;
+import java.awt.Graphics;
 
-    public ClownFish(String name , int x, int y){
+public class Clownfish extends Fish{
+    private static int numClownfish = 0;
+
+    public Clownfish(String name , int x, int y){
         super(name, "Clownfish", x, y);
-        numClownFish ++;
+        numClownfish ++;
     }
 
     @Override
-    public void draw(Graphic g){
+    public void draw(Graphics g){
         g.setColor(Color.ORANGE);
         g.fillOval(x,y,45,25); // creating orange body
         g.setColor(Color.WHITE); // white lines on clownfish

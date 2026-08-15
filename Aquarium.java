@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import Fishes.*;
 
-public class Aquarium extends JPanel{
+public class Aquarium{
     public static void main(String[] args){
         JFrame frame = new JFrame("Fish App");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -13,7 +13,7 @@ public class Aquarium extends JPanel{
         headerLabel.setFont(new Font("Arial", Font.BOLD, 24));
         frame.add(headerLabel, BorderLayout.NORTH);
 
-        JTextFeild nameInputField = new JTextField(15);
+        JTextField nameInputField = new JTextField(15);
         nameInputField.setToolTipText("Ex: Bubbles");
 
         JRadioButton rdoBetta = new JRadioButton("Betta", true);
