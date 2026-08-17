@@ -2,12 +2,12 @@ package Fishes;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Goldfish extends Fish{
-    private static int numGold = 0;
+public class Guppy extends Fish{
+    private static int numGuppy = 0;
 
-    public Goldfish(String name, int x, int y){
-        super(name,"Goldfish", x, y);
-        numGold ++;
+    public Guppy(String name, int x, int y){
+        super(name,"Guppy", x, y);
+        numGuppy ++;
 
     }
 
